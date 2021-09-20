@@ -1,0 +1,106 @@
+@mixin  flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin  res() {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:none;
+    list-style:none;
+    text-decoration:none;
+}
+
+*{
+  @include res(); 
+}
+
+
+body{
+    @include flexCenter();
+    height: 100vh;
+    background-color: lightcyan;
+}
+.calculator{
+    width: 280px;
+    border-radius: 20px ;
+    background-color: rgb(40, 49, 49);
+    padding: 20px;
+    position: relative;
+    box-shadow: 1px 2px 10px rgba(3, 3, 3, 0.993);
+
+    .text2{
+       #declare{
+            height: 60px;
+             padding-top: 7px;
+             font-size: 30px;
+             display: inline-block;
+             color: white;
+             text-align: right;
+             width: 100%;
+             background-color: transparent;
+             border: none;
+             outline: none;
+        }
+        ul{
+height: 50px;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+justify-content: flex-end;
+li{
+    color: rgba(255, 255, 255, 0.459);
+}        
+}
+        
+    }
+    .buttons{
+        margin-top: 20px;
+        height:300px;
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        grid-template-columns: auto auto auto auto;
+    
+    
+        .emeliyyat{
+        color: limegreen;
+        font-size: 24px;
+        padding-bottom: 5px;
+
+    }
+    #clear{
+        color: orange;
+        font-size: 25px;
+    }
+    #equal{
+        color: white;
+        padding-bottom: 5px;
+        font-size: 32px;
+        background-color: limegreen;
+   &:hover{
+    background-color:rgb(39, 39, 39) ;
+   }
+    }
+
+        button{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.835);
+            color: white;
+            font-size: 20px;
+            background-color:rgb(40, 49, 49) ;
+        transition: 0.3s;
+        &:hover{
+            background-color:rgb(39, 39, 39) ;
+// box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.835);
+
+        }}
+    }
+}
+

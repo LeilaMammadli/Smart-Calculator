@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightcyan;
+}
+
+.calculator {
+  width: 280px;
+  border-radius: 20px;
+  background-color: #283131;
+  padding: 20px;
+  position: relative;
+  box-shadow: 1px 2px 10px rgba(3, 3, 3, 0.993);
+}
+.calculator .text2 #declare {
+  height: 60px;
+  padding-top: 7px;
+  font-size: 30px;
+  display: inline-block;
+  color: white;
+  text-align: right;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.calculator .text2 ul {
+  height: 50px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.calculator .text2 ul li {
+  color: rgba(255, 255, 255, 0.459);
+}
+.calculator .buttons {
+  margin-top: 20px;
+  height: 300px;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: auto auto auto auto;
+}
+.calculator .buttons .emeliyyat {
+  color: limegreen;
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+.calculator .buttons #clear {
+  color: orange;
+  font-size: 25px;
+}
+.calculator .buttons #equal {
+  color: white;
+  padding-bottom: 5px;
+  font-size: 32px;
+  background-color: limegreen;
+}
+.calculator .buttons #equal:hover {
+  background-color: #272727;
+}
+.calculator .buttons button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.835);
+  color: white;
+  font-size: 20px;
+  background-color: #283131;
+  transition: 0.3s;
+}
+.calculator .buttons button:hover {
+  background-color: #272727;
+}
